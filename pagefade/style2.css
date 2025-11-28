@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+body{
+    background: #efefef;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#header {
+    background: #c56fa6;
+    color: #fff;
+}
+
+#header h1 {
+    margin: 0;
+    padding: 1em;
+    letter-spacing: 0.1em;
+}
+
+#main {
+    background: #fff;
+    width: 85%;
+    height: 100vh;
+    margin: 2em auto;
+    padding: 2em;
+}
+
+#footer {
+    background: #000;
+    color: #fff;
+    font-size: 0.7em;
+    margin: 0;
+    padding: 2rem;
+}
+
+.fadeUp {
+    opacity: 1;
+    animation-name: fadeUp;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: .25s;
+    animation-fill-mode: forwards;
+}  
+
+
+@keyframes fadeUp{
+    0%{
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+} 
